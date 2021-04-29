@@ -95,10 +95,10 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  1)
 
  */
- int adder(int a, int b) 
+int adder(int a, int b) 
  {
-     ignoreUnused(a,b);
-     return {};
+    ignoreUnused(a,b);
+    return {};
  }
 /*
  2)
