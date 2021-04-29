@@ -15,16 +15,13 @@ video: Chapter 2 - Part 3
  
  
  1) Write down the names of all of the primitives available in C++ (excluding wchar_t) here: 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ short
+ int
+ long
+ char 
+ float 
+ double 
+ bool
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
     a) give each variable declaration an initial value
@@ -56,10 +53,32 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
+    int height = 10;
+    int weight = 12;
+    int age = 100;
+
+    short length = 20;
+    short width = 2;
+    short distance = 200;
     
+    long mass = 60000;
+    long hypotenuse = 67;
+    long gain = 208;
+    char firstInitial = 's';
+    char middleInitial = 'p';
+    char lastInitial = 'm';
+    float sample = 100.0f;
+    float buffer = 30000.0f;
+    float freq = 20000.0f;
+    double potatoes = 5213;
+    double bread = 5436;
+    double burger = 9512;
+    bool isActive = true;
+    bool isMakingSound = true;
+    bool isOpen = false;
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, height, weight, age, length, width, distance, mass, hypotenuse, gain, firstInitial, middleInitial, lastInitial, sample, buffer, freq, potatoes, bread, burger, isActive, isMakingSound, isOpen); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -74,44 +93,83 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 
 /*
  1)
- */
 
+ */
+int adder(int a, int b) 
+{
+    ignoreUnused(a,b);
+    return {};
+}
 /*
  2)
  */
-
+bool isOpen(int timeOfDay) 
+{
+    ignoreUnused(timeOfDay);
+    return {};
+}
 /*
  3)
  */
-
+char firstInitial(char firstInitial, char lastInitial = 'R') 
+{
+    ignoreUnused(firstInitial, lastInitial);
+    return {};
+}
 /*
  4)
  */
-
+float getArea(float width, float height) 
+{
+    ignoreUnused(width, height);
+    return {};
+}
 /*
  5)
  */
-
+int totalOutputs(int outputOne = 2, int outputTwo = 8) 
+{
+    ignoreUnused(outputOne, outputTwo);
+    return {};
+}
 /*
  6)
  */
-
+void drawLine(int lineLength, int lineWidth)
+{
+    ignoreUnused(lineLength, lineWidth);
+}
 /*
  7)
  */
-
+float setVolume(float volumeKnobValue) 
+{
+    ignoreUnused(volumeKnobValue);
+    return {};
+}
 /*
  8)
  */
-
+bool canSleep(bool isWorkDone = false) 
+{
+    ignoreUnused(isWorkDone);
+    return {}; 
+}
 /*
  9)
  */
-
+void setTime(int hour, int minute) 
+{
+    ignoreUnused(hour, minute);
+}
 /*
  10)
  */
-
+bool isMusician(bool playsGuitar = false, bool canSing = false, bool playsPiano = false, bool makesSickBeats = true) 
+{
+    ignoreUnused(playsGuitar, canSing, playsPiano, makesSickBeats);
+    return {};
+}
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -132,27 +190,27 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto sum = adder(5, 10);
     //2)
-    
+    auto status = isOpen(9);
     //3)
-    
+    auto first = firstInitial('s', 't');
     //4)
-    
+    auto area = getArea(20.f, 89.f);
     //5)
-    
+    auto outputs = totalOutputs(40, 70);
     //6)
-    
+    drawLine(39, 8);
     //7)
-    
+    auto volume = setVolume(78);
     //8)
-    
+    auto allowedToSleep = canSleep(false);
     //9)
-    
+    setTime(12, 48);
     //10)
+    bool friends = isMusician(true, false, true, false);
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, sum, status, first, area, outputs, volume, allowedToSleep, friends);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
