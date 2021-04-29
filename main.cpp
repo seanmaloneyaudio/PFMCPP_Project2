@@ -96,10 +96,10 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 
  */
 int adder(int a, int b) 
- {
+{
     ignoreUnused(a,b);
     return {};
- }
+}
 /*
  2)
  */
@@ -135,7 +135,8 @@ int totalOutputs(int outputOne = 2, int outputTwo = 8)
 /*
  6)
  */
-void drawLine(int lineLength, int lineWidth){
+void drawLine(int lineLength, int lineWidth)
+{
     ignoreUnused(lineLength, lineWidth);
 }
 /*
@@ -149,11 +150,11 @@ float setVolume(float volumeKnobValue)
 /*
  8)
  */
- bool canSleep(bool isWorkDone = false) 
- {
-     ignoreUnused(isWorkDone);
-     return {};
- }
+bool canSleep(bool isWorkDone = false) 
+{
+    ignoreUnused(isWorkDone);
+    return {}; 
+}
 /*
  9)
  */
