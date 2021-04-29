@@ -95,7 +95,8 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  1)
 
  */
- int adder(int a, int b) {
+ int adder(int a, int b) 
+ {
      ignoreUnused(a,b);
      return {};
  }
@@ -110,54 +111,61 @@ bool isOpen(int timeOfDay)
 /*
  3)
  */
-char firstInitial(char firstInitial, char lastInitial = 'R') {
+char firstInitial(char firstInitial, char lastInitial = 'R') 
+{
     ignoreUnused(firstInitial, lastInitial);
     return {};
 }
 /*
  4)
  */
-float getArea(float width, float height) {
+float getArea(float width, float height) 
+{
     ignoreUnused(width, height);
     return {};
 }
 /*
  5)
  */
-int totalOutputs(int outputOne = 2, int outputTwo = 8) {
+int totalOutputs(int outputOne = 2, int outputTwo = 8) 
+{
     ignoreUnused(outputOne, outputTwo);
     return {};
 }
 /*
  6)
  */
-void drawLine(int lineLength, int lineWidth) {
+void drawLine(int lineLength, int lineWidth){
     ignoreUnused(lineLength, lineWidth);
 }
 /*
  7)
  */
-float setVolume(float volumeKnobValue) {
+float setVolume(float volumeKnobValue) 
+{
     ignoreUnused(volumeKnobValue);
     return {};
 }
 /*
  8)
  */
- bool canSleep(bool isWorkDone = false) {
+ bool canSleep(bool isWorkDone = false) 
+ {
      ignoreUnused(isWorkDone);
      return {};
  }
 /*
  9)
  */
-void setTime(int hour, int minute) {
+void setTime(int hour, int minute) 
+{
     ignoreUnused(hour, minute);
 }
 /*
  10)
  */
-bool isMusician(bool playsGuitar = false, bool canSing = false, bool playsPiano = false, bool makesSickBeats = true) {
+bool isMusician(bool playsGuitar = false, bool canSing = false, bool playsPiano = false, bool makesSickBeats = true) 
+{
     ignoreUnused(playsGuitar, canSing, playsPiano, makesSickBeats);
     return {};
 }
@@ -181,7 +189,7 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    auto sum = adder(5,10);
+    auto sum = adder(5, 10);
     //2)
     auto status = isOpen(9);
     //3)
